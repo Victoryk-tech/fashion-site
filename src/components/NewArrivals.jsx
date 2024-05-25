@@ -39,7 +39,7 @@ export const NewArrivals = () => {
           return (
             <div
               key={index}
-              className="flex flex-col justify-start items-start gap-2 border py-2 bg-white rounded-lg w-96 lg:w-64 h-96 md:h-96 lg:h-80"
+              className="flex flex-col justify-start items-start gap-2 border py-2 bg-white rounded-lg w-64 lg:w-64 h-96 md:h-96 lg:h-80"
             >
               {/* left */}
               <div className="flex items-center justify-center w-full h-1/2">
