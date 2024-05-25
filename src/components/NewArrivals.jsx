@@ -30,7 +30,7 @@ export const newArrivs = [
 ];
 export const NewArrivals = () => {
   return (
-    <div className="p-10 px-20  w-full h-full space-y-8 bg-[#E3E6F3]">
+    <div className="px-4 py-5 lg:p-10 lg:px-20  w-full h-full space-y-8 bg-[#E3E6F3]">
       <div className="w-full text-center text-[34px] font-bold">
         <h1>New Collections</h1>
       </div>
