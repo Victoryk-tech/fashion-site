@@ -39,7 +39,7 @@ export const Faq = () => {
     isOpen === index ? setIsOpen(false) : setIsOpen(index);
   };
   return (
-    <div className="bg-[#EAFCCB] w-full h-full py-6 md:px-10 text-black">
+    <div className="bg-[#E3E6F3] w-full h-full py-6 md:px-10 text-black">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-[700] text-[28px]">FAQ'S</h1>
         <p className="font-[500] text-[20px]">Questions? Look here</p>

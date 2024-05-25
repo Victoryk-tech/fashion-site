@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       Open: ["Open Sans", "sans-serif"],
       itim: ["Itim", "cursive"],
+      spartan: ["League Spartan", "sans-serif"],
     },
     extend: {},
   },

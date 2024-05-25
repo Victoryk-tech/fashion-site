@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { Layout } from "./components/Layout";

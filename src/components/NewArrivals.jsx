@@ -1,89 +1,85 @@
 import React from "react";
-import shoe1 from "../../src/assets/shoe3.jpg";
-import shoe2 from "../../src/assets/shoe7.jpg";
-import shoe12 from "../../src/assets/shoe14.jpg";
-import shoe4 from "../../src/assets/shoe4.jpg";
-import shoe5 from "../../src/assets/shoe5.jpg";
-import shoe8 from "../../src/assets/shoe8.jpg";
-export const ArrivalData = [
+import shoe from "../../src/assets/shoe2.jpg";
+import { MdStarRate } from "react-icons/md";
+import { BsCart3 } from "react-icons/bs";
+export const newArrivs = [
   {
     id: 1,
-    image: shoe1,
-    names: "Shoe",
-    color: "Color Black",
-    amount: 2800,
+    title: "gucii",
+    images: shoe,
+    brand: "guch",
+    rating: 454,
+    price: 67.89,
   },
   {
     id: 2,
-    image: shoe2,
-    names: "Shoe",
-    color: "Color Black",
-    amount: 2800,
+    title: "gucii",
+    images: shoe,
+    brand: "guch",
+    rating: 454,
+    price: 67.89,
   },
   {
     id: 3,
-    image: shoe12,
-    names: "Shoe",
-    color: "Color Black",
-    amount: 2600,
-  },
-  {
-    id: 4,
-    image: shoe4,
-    names: "Shoe",
-    color: "Color Black",
-    amount: 2600,
-  },
-  {
-    id: 5,
-    image: shoe5,
-    names: "Shoe",
-    color: "Color Black",
-    amount: 2600,
-  },
-  {
-    id: 6,
-    image: shoe8,
-    names: "Shoe",
-    color: "Color Black",
-    amount: 2600,
+    title: "gucii",
+    images: shoe,
+    brand: "guch",
+    rating: 454,
+    price: 67.89,
   },
 ];
 export const NewArrivals = () => {
   return (
-    <div className="py-10 px-10 w-full h-full">
-      <div>
-        <div className="flex items-center justify-between pb-4">
-          <h1>New Arrivals</h1>
-          <p>See All</p>
-        </div>
-        <div className="grid grid-cols-3 items-center justify-center h-auto w-full">
-          {ArrivalData.map((data) => {
-            return (
-              <div className="flex flex-col items-start justify-start mb-4 rounded-md p-2 bg-white w-[70%] h-auto">
-                <div className="block items-center w-[15rem] h-[15rem]">
-                  <img src={data.image} alt="" className="" />
-                </div>
-                <div className="w-full h-full pr-4">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p>{data.color}</p>
-                      <p>{data.names}</p>
-                    </div>
-                    <div>
-                      <p>4.5</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start justify-between">
-                    <p>{data.amount}</p>
-                    <p>Cart</p>
-                  </div>
-                </div>
+    <div className="p-10 px-20  w-full h-full space-y-8 bg-[#E3E6F3]">
+      <div className="w-full text-center text-[34px] font-bold">
+        <h1>New Collections</h1>
+      </div>
+      <div className="grid grid-cols-3 items-center justify-center px-8">
+        {newArrivs.map((data, index) => {
+          return (
+            <div
+              key={index}
+              className="flex flex-col justify-start items-start gap-2 border py-2 bg-white rounded-lg w-96 lg:w-64 h-96 md:h-96 lg:h-80"
+            >
+              {/* left */}
+              <div className="flex items-center justify-center w-full h-1/2">
+                <img
+                  src={data.images}
+                  alt=""
+                  className="w-full h-full object-contain"
+                />
               </div>
-            );
-          })}
-        </div>
+              {/* right */}
+              <div className=" w-full h-1/3 px-8 md:px-4 lg:px-8 space-y-2">
+                <p className="text-sm font-semibold">{data.title}</p>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p>{data.brand}</p>
+                  </div>
+                  <div>
+                    <p className="flex items-center justify-center">
+                      {" "}
+                      <MdStarRate className="text-[rgba(243,181,25)]" />
+                      <MdStarRate className="text-[rgba(243,181,25)]" />
+                      <MdStarRate className="text-[rgba(243,181,25)]" />
+                      {data.rating}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start justify-between">
+                  <p className="font-bold text-green-600 rounded-md">
+                    ${data.price}
+                  </p>
+                  <div className="text-[24px]">
+                    <BsCart3 />
+                  </div>
+                </div>
+                <div className=" h-10 flex items-center w-full justify-center"></div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,30 +1,44 @@
 import React from "react";
-import trend1 from "../../src/assets/Trend1.png";
-import trend2 from "../../src/assets/trend2.png";
-import trend3 from "../../src/assets/Trend3.png";
+import SignImg from "../../src/assets/signinpic.png";
 
 export const Trending = () => {
   return (
-    <div className="bg-[#EAFCCB] py-10 px-10 w-full h-full flex justify-start items-start">
-      <div className="w-[40%] h-full flex flex-col items-start justify-center pt-16">
-        <h1 className="text-[32px] font-[700]">
-          Today's trending outfit of the day
+    <div className="bg-white py-6 px-1 md:py-10 md:px-16 w-full h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-between items-center flex-wrap">
+      <div className="w-44 lg:w-48 text-center rounded-[4px] my-4 py-6 px-4 hover:shadow-[10px_10px_54px_rgba(70,62,221,0.1)] shadow-[20px_20px_24px_rgba(0,0,0,0.3)] border-2 border-[#cce7d0]">
+        <img src={SignImg} alt="" className="w-full mb-2" />
+        <h1 className="leading-4 rounded-[4px] font-bold  text-[#088178] bg-[#fddde4] text-[14px] px-2 pt-[9px] pb-[6px] inline-block">
+          Free Shopping
         </h1>
-        <p className="text-[20px] font-[400] pb-4">
-          Today's trending outfit of the day showcases bold patterns and vibrant
-          colors for a standout look.
-        </p>
-        <a
-          href="#"
-          className="py-2 px-16 bg-[#60A20E] text-white rounded-[10px]"
-        >
-          Explore
-        </a>
       </div>
-      <div className="flex items-start w-[60%] pl-8">
-        <img src={trend1} alt="" className="h-[60%] w-[30%]" />
-        <img src={trend2} alt="" className="h-[60%] w-[30%]" />
-        <img src={trend3} alt="" className="h-[60%] w-[30%]" />
+      <div className="w-44 lg:w-48 text-center rounded-[4px] my-4 py-6 px-4 hover:shadow-[10px_10px_54px_rgba(70,62,221,0.1)] shadow-[20px_20px_24px_rgba(0,0,0,0.3)] border-2 border-[#cce7d0]">
+        <img src={SignImg} alt="" className="w-full mb-2" />
+        <h1 className="leading-4 rounded-[4px] font-bold  text-[#088178] bg-[#cdebbc] text-[14px] px-2 pt-[9px] pb-[6px] inline-block">
+          Free Shopping
+        </h1>
+      </div>
+      <div className="w-44 lg:w-48 text-center rounded-[4px] my-4 py-6 px-4 hover:shadow-[10px_10px_54px_rgba(70,62,221,0.1)] shadow-[20px_20px_24px_rgba(0,0,0,0.3)] border-2 border-[#cce7d0]">
+        <img src={SignImg} alt="" className="w-full mb-2" />
+        <h1 className="leading-4 rounded-[4px] font-bold  text-[#088178] bg-[#d1e8f2] text-[14px] px-2 pt-[9px] pb-[6px] inline-block">
+          Free Shopping
+        </h1>
+      </div>
+      <div className="w-44 lg:w-48  text-center rounded-[4px] my-4 py-6 px-4 hover:shadow-[10px_10px_54px_rgba(70,62,221,0.1)] shadow-[20px_20px_24px_rgba(0,0,0,0.3)] border-2 border-[#cce7d0]">
+        <img src={SignImg} alt="" className="w-full mb-2" />
+        <h1 className="leading-4 rounded-[4px] font-bold  text-[#088178] bg-[#cdd4f8] text-[14px] px-2 pt-[9px] pb-[6px] inline-block">
+          Free Shopping
+        </h1>
+      </div>
+      <div className="w-44 lg:w-48 text-center rounded-[4px] my-4 py-6 px-4 hover:shadow-[10px_10px_54px_rgba(70,62,221,0.1)] shadow-[20px_20px_24px_rgba(0,0,0,0.3)] border-2 border-[#cce7d0]">
+        <img src={SignImg} alt="" className="w-full mb-2" />
+        <h1 className="leading-4 rounded-[4px] font-bold  text-[#088178] bg-[#fff2e5] text-[14px] px-2 pt-[9px] pb-[6px] inline-block">
+          Free Shopping
+        </h1>
+      </div>
+      <div className="w-44 lg:hidden text-center rounded-[4px] my-4 py-6 px-4 hover:shadow-[10px_10px_54px_rgba(70,62,221,0.1)] shadow-[20px_20px_24px_rgba(0,0,0,0.3)] border-2 border-[#cce7d0]">
+        <img src={SignImg} alt="" className="w-full mb-2" />
+        <h1 className="leading-4 rounded-[4px] font-bold  text-[#088178] bg-[#fff2e5] text-[14px] px-2 pt-[9px] pb-[6px] inline-block">
+          Free Shopping
+        </h1>
       </div>
     </div>
   );

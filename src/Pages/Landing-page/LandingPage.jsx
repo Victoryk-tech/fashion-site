@@ -2,23 +2,25 @@ import React from "react";
 import { NavBar } from "../../components/NavBar";
 import { Footer } from "../../components/Footer";
 import { Unleash } from "../../components/Unleash";
-import { Collections } from "../../components/Collections";
+
 import { Trending } from "../../components/Trending";
 import { Faq } from "../../components/Faq";
 import { Subscribe } from "../../components/Subscribe";
 import { NewArrivals } from "../../components/NewArrivals";
-import { Feedback } from "../../components/Feedback.jsx";
+import { Hero } from "../../components/Hero";
+import { Features } from "../../components/Features";
 
 export const LandingPage = () => {
   return (
-    <div className="w-[100%] h-auto bg-[#F3F3F3]">
+    <div className="w-[100%] h-auto bg-white">
       <NavBar />
-      <Unleash />
-      <Collections />
+      <Hero />
+
       <Trending />
       <NewArrivals />
+      <Features />
       <Faq />
-      <Feedback />
+      <Unleash />
       <Subscribe />
       <Footer />
     </div>
