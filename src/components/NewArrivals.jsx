@@ -12,6 +12,14 @@ export const newArrivs = [
     price: 67.89,
   },
   {
+    id: 1,
+    title: "gucii",
+    images: shoe,
+    brand: "guch",
+    rating: 454,
+    price: 67.89,
+  },
+  {
     id: 2,
     title: "gucii",
     images: shoe,
@@ -30,16 +38,16 @@ export const newArrivs = [
 ];
 export const NewArrivals = () => {
   return (
-    <div className="px-4 py-5 lg:p-10 lg:px-20  w-full h-full space-y-8 bg-[#E3E6F3]">
+    <div className="px-4 py-5 lg:p-10 lg:px-16  w-full h-full space-y-8 bg-[#E3E6F3]">
       <div className="w-full text-center text-[34px] font-bold">
         <h1>New Collections</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center md:px-2 lg:px-8 px-2 space-y-6 md:space-y-0  md:space-x-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 items-center justify-center  lg:px-8 px-2 space-y-6 md:space-y-0  md:space-x-2">
         {newArrivs.map((data, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col justify-start items-start gap-2 border py-2 bg-white rounded-lg w-80 md:w-56 lg:w-64 h-96 md:h-72 lg:h-80"
+              className="flex flex-col justify-start items-start gap-2 border py-2 bg-white rounded-lg w-80 md:w-[10.8rem] lg:w-64 h-96 md:h-72 lg:h-80"
             >
               {/* left */}
               <div className="flex items-center justify-center w-full h-1/2">
