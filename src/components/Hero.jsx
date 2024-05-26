@@ -65,10 +65,10 @@ export const Hero = () => {
                 <div className="space-y-2 flex flex-col justify-center items-center">
                   <p
                     data-aos="fade-up"
-                    className="font-inter font-extrabold drop-shadow-md text-3xl md:text-6xl text-brown3"
+                    className="font-inter font-extrabold drop-shadow-md text-xl md:text-4xl text-brown3"
                   >
                     {data.title}
-                    <strong className="text-ivory sm:text-brown font-bold font-zeyada text-4xl md:text-7xl">
+                    <strong className="text-ivory sm:text-brown font-bold font-zeyada text-2xl md:text-3xl">
                       {data.title2}
                     </strong>
                   </p>
