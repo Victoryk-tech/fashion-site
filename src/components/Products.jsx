@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { MdStarRate } from "react-icons/md";
+import { CartContext } from "./Features/ContextProvider";
+
 export const Products = ({ product }) => {
   const {
     id,
@@ -15,6 +17,7 @@ export const Products = ({ product }) => {
     images,
     thumbnail,
   } = product;
+  const { dispatch } = useContext(CartContext);
   return (
     <div className="flex flex-col justify-start items-start  bg-white rounded-lg w-96 lg:w-56 h-96 md:h-96 lg:h-80">
       {/* left */}
@@ -46,7 +49,10 @@ export const Products = ({ product }) => {
           </div>
         </div>
         <div className=" h-10 flex items-center w-full justify-center">
-          <button className="bg-[#830f0f] text-white p-2  rounded-md text-center text-sm font-bold hover:bg-white border-none hover:text-[#830f0f] hover:border-[#830f0f] hover:border-2 hover:scale-95 ease-in-out transition-all">
+          <button
+            className="bg-[#830f0f] text-white p-2  rounded-md text-center text-sm font-bold hover:bg-white border-none hover:text-[#830f0f] hover:border-[#830f0f] hover:border-2 hover:scale-95 ease-in-out transition-all"
+            onClick={() => dispatch({ type: "Add", product: product })}
+          >
             Add to cart
           </button>
         </div>

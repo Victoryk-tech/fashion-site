@@ -7,16 +7,19 @@ import { LandingPage } from "./Pages/Landing-page/LandingPage";
 import { SignUp } from "./Pages/SignUp";
 import { LogIn } from "./Pages/LogIn";
 import { DashboardLayout } from "./Pages/Dashboard/DashboardLayout";
-import { Footer } from "./components/Footer";
+
+import { Cart } from "./components/Cart";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<LandingPage />} />
           </Route>
+          <Route path="cart" element={<Cart />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<LogIn />} />
           <Route path="dashboard" element={<DashboardLayout />}></Route>
