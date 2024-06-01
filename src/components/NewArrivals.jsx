@@ -42,12 +42,12 @@ export const NewArrivals = () => {
       <div className="w-full text-center text-[34px] font-bold">
         <h1>New Collections</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 items-center justify-center  lg:px-8 px-2 space-y-6 md:space-y-0  md:space-x-2">
+      <div className="grid grid-cols-1 md:grid-cols-4 items-center justify-center px-2 lg:px-8  space-y-6 md:space-y-0 w-full">
         {newArrivs.map((data, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col justify-start items-start gap-2 border py-2 bg-white rounded-lg w-80 md:w-[10.8rem] lg:w-64 h-96 md:h-72 lg:h-80"
+              className="flex flex-col justify-start items-start border py-1 bg-white rounded-lg w-50 md:w-[10.8rem] lg:w-44 h-96 md:h-72 lg:h-52"
             >
               {/* left */}
               <div className="flex items-center justify-center w-full h-1/2">

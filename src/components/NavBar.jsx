@@ -19,7 +19,7 @@ export const NavBar = () => {
     setNavHomme(!navHome);
   };
   return (
-    <div className=" w-full px-4 py-2 lg:px-[72px] lg:py-[15px] bg-[#E3E6F3] z-[99] sticky top-0 left-0 shadow-[0_5px_15px_rgba(0,0,0,0.6)]">
+    <div className=" w-full px-4 py-2 lg:px-[72px] lg:py-[10px] bg-[#E3E6F3] z-[99] sticky top-0 left-0 shadow-[0_5px_15px_rgba(0,0,0,0.6)]">
       <div className="flex items-center justify-between p-4 md:px-10">
         <div className="flex items-center justify-center">
           <img src={logo} alt="" className="w-8 h-8 md:w-10 md:h-10" />

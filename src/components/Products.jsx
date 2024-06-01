@@ -81,43 +81,36 @@ export const Products = ({ product }) => {
       {modal && (
         <div className="modal fixed w-full h-full bg-[#C4C4C46B]  right-0 top-0 md:flex justify-center md:justify-end items-center md:items-end">
           <div
-            className="hidden md:flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[65%] md:w-[35%] h-full bg-transparent text-black"
+            className=" flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[65%] md:w-[35%] h-full bg-transparent text-black"
             onClick={toggleModal}
           ></div>
           {/* modal for items */}
           <div className="flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-full lg:w-[35%] h-full bg-[#E3E6F3] text-black">
-            <div className=" flex flex-col justify-start md:justify-center items-center w-full h-full pt-14 md:pt-8 gap-4 text-black">
+            <div className=" flex flex-col justify-start md:justify-center items-start w-full h-full pt-14 px-2 md:pt-8 gap-4 text-black">
               <div
-                className="text-[32px] text-black text-start w-full pt-4"
+                className="text-[32px] text-black text-start w-full pt-4 md:pt-10"
                 onClick={toggleModal}
               >
                 <FaLongArrowAltLeft />
               </div>
-              <img src={images} alt="" className="w-[40%] h-[28%]" />
-              <h1>{title}</h1>
-              <p className="text-center text-sm">{description}</p>
-              <div className="flex items-center justify-between gap-8 font-[700]">
-                <p>{stock}</p>
-                <p>{rating}</p>
-                <p>{category}</p>
+              <div className=" flex items-center justify-center w-full h-[28%]">
+                <img src={images} alt="" className="w-[40%] h-full" />
               </div>
-              <div className="flex justify-center items-center gap-16 font-[500]">
-                {/* <div className="flex items-center gap-2">
-                  <p
-                    className="bg-[#F3C294] py-1 px-3 font-[700] cursor-pointer"
-                    onClick={decrement}
-                  >
-                    -
-                  </p>
-                  <p className="font-[700]">{quantity}</p>
-                  <p
-                    className="bg-[#F3C294] py-1 px-3 font-[600] cursor-pointer"
-                    onClick={increment}
-                  >
-                    +
-                  </p>
-                </div> */}
+              <h1 className="w-full text-center font-bold">{title}</h1>
+              <p className="text-center text-sm">{description}</p>
+              <div className="flex flex-col items-start font-[700] gap-2">
+                <p>Brand: {brand}</p>
+                <p>Stock: {stock}</p>
+                <p className="flex items-center justify-center">
+                  Rating: {rating}
+                  <MdStarRate className="text-[rgba(243,181,25)]" />
+                  <MdStarRate className="text-[rgba(243,181,25)]" />
+                  <MdStarRate className="text-[rgba(243,181,25)]" />
+                </p>
+                <p>Category: {category}</p>
+              </div>
 
+              <div className="flex justify-center items-center gap-16 font-[500] w-full">
                 <a
                   href="#"
                   className="bg-[#00302E] text-white py-2 px-3 text-[12px]"
