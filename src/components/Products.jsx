@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { MdStarRate } from "react-icons/md";
+import { FaLongArrowAltLeft } from "react-icons/fa";
 import { CartContext } from "./Features/ContextProvider";
 
 export const Products = ({ product }) => {
@@ -78,14 +79,20 @@ export const Products = ({ product }) => {
       </div>
 
       {modal && (
-        <div className="modal fixed w-full h-full bg-[#C4C4C46B]  right-0 top-0 flex justify-center md:justify-end items-center md:items-end">
+        <div className="modal fixed w-full h-full bg-[#C4C4C46B]  right-0 top-0 md:flex justify-center md:justify-end items-center md:items-end">
           <div
-            className="flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[65%] md:w-[35%] h-full bg-transparent text-black"
+            className="hidden md:flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[65%] md:w-[35%] h-full bg-transparent text-black"
             onClick={toggleModal}
           ></div>
           {/* modal for items */}
-          <div className="flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[35%] h-full bg-[#E3E6F3] text-black">
-            <div className=" flex flex-col justify-start md:justify-center items-center w-full h-full gap-4 text-black">
+          <div className="flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-full lg:w-[35%] h-full bg-[#E3E6F3] text-black">
+            <div className=" flex flex-col justify-start md:justify-center items-center w-full h-full pt-14 md:pt-8 gap-4 text-black">
+              <div
+                className="text-[32px] text-black text-start w-full pt-4"
+                onClick={toggleModal}
+              >
+                <FaLongArrowAltLeft />
+              </div>
               <img src={images} alt="" className="w-[40%] h-[28%]" />
               <h1>{title}</h1>
               <p className="text-center text-sm">{description}</p>
