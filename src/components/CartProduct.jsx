@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "./Features/ContextProvider";
+import { MdOutlineDelete } from "react-icons/md";
 
 const CartProduct = ({ cartItems }) => {
   const { dispatch } = useContext(CartContext);
@@ -64,7 +65,7 @@ const CartProduct = ({ cartItems }) => {
         </div>
       </div> */}
 
-      <nav className="flex items-center justify-center w-full space-x-28 text-center">
+      <nav className="flex items-center justify-center w-full md:space-x-28 text-center">
         <div>
           <img src={images} alt="" className="w-32 h-28" />
         </div>
@@ -89,11 +90,8 @@ const CartProduct = ({ cartItems }) => {
             +
           </button>
         </div>
-        <button
-          className="rounded-md bg-[#8f2828] text-white p-2"
-          onClick={() => removeFromCart(cartItems)}
-        >
-          Remove
+        <button className="text-3xl" onClick={() => removeFromCart(cartItems)}>
+          <MdOutlineDelete />
         </button>
       </nav>
     </div>

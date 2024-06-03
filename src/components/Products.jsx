@@ -79,9 +79,9 @@ export const Products = ({ product }) => {
       </div>
 
       {modal && (
-        <div className="modal fixed w-full h-full bg-[#C4C4C46B]  right-0 top-0 md:flex justify-center md:justify-end items-center md:items-end">
+        <div className="modal  fixed w-full h-full bg-[#C4C4C46B]  right-0 top-0 md:flex justify-start md:justify-end items-start md:items-end">
           <div
-            className=" flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[65%] md:w-[35%] h-full bg-transparent text-black"
+            className=" hidden md:flex flex-col justify-start md:justify-center items-center gap-4 p-4 w-[65%] md:w-[35%] h-full bg-transparent text-black"
             onClick={toggleModal}
           ></div>
           {/* modal for items */}

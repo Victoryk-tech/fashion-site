@@ -7,10 +7,10 @@ export const Cart = () => {
   const { cartState } = useContext(CartContext);
 
   return (
-    <div className="w-full h-auto p-10">
+    <div className="w-full h-auto p-4 md:p-10">
       <div>
         <div className="flex flex-col  items-start justify-start">
-          <nav className="flex items-start text-center justify-start w-full space-x-28">
+          <nav className="flex items-start md:items-start text-center justify-start w-full md:space-x-28">
             <h1 className="w-[200px]">Image</h1>
             <h1 className="w-[100px]">Price</h1>
             <h1 className="w-[100px]">Brand</h1>
