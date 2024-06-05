@@ -8,6 +8,8 @@ import { Subscribe } from "../../components/Subscribe";
 import { NewArrivals } from "../../components/NewArrivals";
 import { Hero } from "../../components/Hero";
 import { Features } from "../../components/Features";
+import { About } from "../../components/About.jsx";
+import { Bills } from "../../components/Bills.jsx";
 
 export const LandingPage = () => {
   return (
@@ -15,8 +17,10 @@ export const LandingPage = () => {
       <Hero />
 
       <Trending />
+      <Bills />
       <NewArrivals />
       <Features />
+      <About />
       <Faq />
       <Unleash />
       <Subscribe />
