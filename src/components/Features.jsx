@@ -34,7 +34,7 @@ export const Features = () => {
     <div>Error:{error}</div>;
   }
   return (
-    <div className="w-full h-full p-4 md:p-3 lg:py-10 lg:px-7 bg-[#E3E6F3]">
+    <div className="w-full h-full p-4 md:p-3 lg:py-10 lg:px-7 bg-white">
       <div className="text-center flex flex-col items-center center pb-4 w-full">
         <h1 className="text-[38px] font-bold">Features</h1>
         <p className="text-xl">Summer collection New modern products</p>
