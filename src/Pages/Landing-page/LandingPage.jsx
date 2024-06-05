@@ -10,10 +10,12 @@ import { Hero } from "../../components/Hero";
 import { Features } from "../../components/Features";
 import { About } from "../../components/About.jsx";
 import { Bills } from "../../components/Bills.jsx";
+import { NavBar } from "../../components/NavBar.jsx";
 
 export const LandingPage = () => {
   return (
-    <div className="w-[100%] h-auto bg-white">
+    <div className="w-[100%] h-auto bg-white !scroll-smooth">
+      <NavBar />
       <Hero />
 
       <Trending />
