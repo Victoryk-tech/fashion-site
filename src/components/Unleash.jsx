@@ -4,23 +4,6 @@ import "aos/dist/aos.css";
 import unleashData from "../../src/components/data/Unleash.js";
 import { useEffect, useRef, useState } from "react";
 
-// export const ArrivalData = [
-//   {
-//     id: 1,
-//     image: shoe1,
-
-//     description:
-//       " Explore our premium products for inspiration and empowerment  Elevate your everyday with quality, style, and innovation.",
-//   },
-//   {
-//     id: 2,
-//     image: shoe1,
-
-//     description:
-//       " Explore our premium products for inspiration and empowerment  Elevate your everyday with quality, style, and innovation.",
-//   },
-// ];
-
 export const Unleash = () => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);

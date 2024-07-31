@@ -19,6 +19,7 @@ const CartProduct = ({ cartItems }) => {
     thumbnail,
     quantity,
   } = cartItems;
+  
   const IncreaseCart = (item) => {
     dispatch({
       type: "Increase_Cart",
